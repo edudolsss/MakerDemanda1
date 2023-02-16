@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <div class="col-12 container">
+        <!-- Titulo da Tela -->
+        <div class="row text-center">
+            <p class="display-6">Cadastro de Empresas</p>
+        </div>
+
+        <!-- Card de Cadastro de Informações. -->
+        <div class="card">
+            <!-- Primeira linha de cadastro com inputs. -->
+            <div class="row" style="padding-left: 20px;padding-top: 20px;">
+                <div class="form-floating mb-3 col-4">
+                    <input class="form-control" style="height:15px;margin-top: 10px;"  id="nome-empresa" type="text" placeholder="Nome Empresa">
+                    <label style="padding:15px 0px 0px 25px;" for="nome-empresa"> Nome Empresa</label>
+                </div>
+                <div class="form-floating mb-3 col-4">
+                    <input class="form-control" style="height:15px;margin-top: 10px;"  id="cnpj-empresa" maxlength="14" type="text" placeholder="CNPJ">
+                    <label style="padding:15px 0px 0px 25px;" for="cnpj-empresa">CNPJ</label>
+                </div>
+            </div>
+
+            <!-- Segunda linha de cadastro com inputs. -->
+            <div class="row" style="padding-left: 20px;">
+                <div class="form-floating mb-3 col-3">
+                    <input class="form-control" style="height:15px;margin-top: 10px;"  id="nome-usuario" type="text" placeholder="Nome Usuário">
+                    <label style="padding:15px 0px 0px 25px;" for="nome-usuario">Nome Usuário</label>
+                </div>
+                <div class="form-floating mb-3 col-2">
+                    <input class="form-control" style="height:15px;margin-top: 10px;"  id="cpf-usuario" maxlength="11" type="text" placeholder="CPF">
+                    <label style="padding:15px 0px 0px 25px;" for="cpf-usuario">CPF</label>
+                </div>
+                <div class="form-floating mb-3 col-3">
+                    <input class="form-control" style="height:15px;margin-top: 10px;"  id="email-usuario" type="email" placeholder="E-mail">
+                    <label style="padding:15px 0px 0px 25px;" for="email-usuario">E-mail</label>
+                </div>
+                <div class="form-floating mb-3 col-3">
+                    <input class="form-control" style="height:15px;margin-top: 10px;"  id="telefone-usuario" maxlength="11"  placeholder="Telefone">
+                    <label style="padding:15px 0px 0px 25px;" for="telefone-usuario">Telefone</label>
+                </div>
+            </div>
+
+            <!-- Botão para pegar informações do campos acima e executar função de cadastro. -->
+            <div class="row justify-content-end" style="padding-left: 20px;padding-bottom: 20px;">
+                <div class="col-3">
+                    <button type="button" class="btn btn-success" id="cadastrar">Cadastrar</button>
+                </div>
+            </div>
+
+            <!-- Tabela em que as informações do cadastro serão exibidas. -->
+            <div class="row justify-content-center" style=" padding-bottom:20px;">
+                <div class="col-11 card" style="padding-right:0px; padding-left:0px; overflow:auto; height:300px;">
+                    <table class="table table-bordered text-center" id="tabela">
+                        <tr class ="table-info">
+                            <th scope="col">Nome Usuário</th>
+                            <th scope="col">E-mail</th>
+                            <th scope="col">Empresa</th>
+                            <th scope="col">Gerar E-mail</th>
+                            <th scope="col">Link</th>
+                            <th scope="col">Arquivos</th>
+                            <th scope="col">Confirmação</th>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
